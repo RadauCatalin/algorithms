@@ -85,7 +85,7 @@ public class LogicalOp {
     //even number and odd number
     public void Number() {
         System.out.println("Even number between 0 and 100:");
-        for (int i = 0; i < 101; i++) {
+        for (int i = 0; i  < 101; i++) {
             if (i % 10 == 0) {
                 System.out.println();
                 System.out.print(i + ", ");
@@ -99,8 +99,41 @@ public class LogicalOp {
         for (int i = 0; i < 101; i++) {
             if (i % 10 == 0) {
                 System.out.println();
-            } else if (i % 2 != 0) {
+            } else if (i % 2 != 0){
                 System.out.print(i + ", ");
+            }
+        }
+    }
+    public int SumOfNumber(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please insert your number for sum");
+        int numbers = scanner.nextInt();
+        int sum = 0;
+        for (int i = numbers ; i <= 100; i++)
+            sum = sum +i;
+        return sum;
+    }
+    public int AverageOfNumber(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please insert your number for average");
+        int numbers = scanner.nextInt();
+        int sum = 0, numberOfNumbers= 0;
+        for (int i = numbers ; i <= 100; i++){
+            sum = sum +i;
+            numberOfNumbers++;
+        }
+
+        return sum/numberOfNumbers;
+    }
+
+    public void Asterix() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Please insert your number fo asterix");
+        int number = scanner.nextInt();
+        for (int i = number; i >= 1; i--) {
+            System.out.println();
+            for (int j = i; j >= 1; j--) {
+                System.out.print("*");
             }
         }
     }

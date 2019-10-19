@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.util.Scanner;
 
 public class CozaLozaWoza {
-    private int  first;
+    private int first;
     private int second;
 
     public int getFirst() {
@@ -39,13 +39,14 @@ public class CozaLozaWoza {
                     System.out.print("Woza");
                 } else {
                     System.out.print(i);
-                }if (i % 11 == 0){
-                System.out.println();
-                }else
+                }
+                if (i % 11 == 0) {
+                    System.out.println();
+                } else
                     System.out.print(" ");
-                }
-                }
             }
+        }
     }
+}
 
 
